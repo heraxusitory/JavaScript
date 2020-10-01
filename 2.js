@@ -1,5 +1,4 @@
-var isEnd = true;
-while (isEnd == true) {
+function countNumbers() {
 	var firstNumber = prompt('Введите первое число!');
 
 	if (firstNumber != null) {
@@ -33,6 +32,14 @@ while (isEnd == true) {
 			}
 		}
 	}
-	
-isEnd = confirm("Запустить еще раз?");
+	decision = confirm("Запустить еще раз?");
+	if (decision) {
+		countNumbers();
+	} else {
+		return;
+	}
+
 }
+
+
+countNumbers();
