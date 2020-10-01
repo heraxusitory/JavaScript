@@ -1,8 +1,8 @@
 var startYear;
 var finishYear;
 function getBeginAndEndYear(){
-	startYear = prompt("Введите начальный год!");
-	finishYear = prompt("Введите конечный год!");
+	startYear.trim() = prompt("Введите начальный год!");
+	finishYear.trim() = prompt("Введите конечный год!");
 
 	if (startYear >= finishYear) {
 		alert("Начальный год больше или равен конечному году!" +
